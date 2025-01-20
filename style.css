@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+	--white: #FFFFFE;
+	--light-grey-1: #EFF0F3;
+	--light-grey-2: #E4E5E9;
+	--grey: #C0C0C0;
+	--dark-grey: #9A9494;
+	--black: #2B2C34;
+	--blue: #6246EA;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*body {*/
+/*	position: relative;*/
+/*}*/
+
+header, section, footer {
+	width: 1440px;
+	padding: 0 95px;
+	margin: 0 auto;
+}
+
+/*-----------------------header-----------------------------*/
+
+header {
+	/*position: fixed;*/
+	height: 86px;
+	background: var(--light-grey-1);
+	box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header p {
+	color: #001858;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+header p span {
+	color: var(--blue);
+	font-size: 18px;
+	font-weight: 700;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+
+nav ul li:nth-child(4) {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+nav a {
+	color: var(--black);
+	font-size: 20px;
+	font-weight: 700;
+}
+
+nav button {
+	color: var(--white);
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: capitalize;
+	border-radius: 4px;
+	background: var(--blue);
+	display: flex;
+	padding: 10px 17px;
+	gap: 10px;
+}
+
+/*---------------------------main-----------------------------*/
+
+.hero {
+	background: var(--light-grey-1);
+}
+
+
+
+
