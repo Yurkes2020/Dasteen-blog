@@ -91,6 +91,45 @@ nav button {
 
 .hero {
 	background: var(--light-grey-1);
+	height: 814px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 116px;
+}
+
+.hero div {
+
+}
+
+.hero img {
+	padding: 13px 18px 11px;
+}
+.hero h1 {
+	color: var(--black);
+	font-size: 64px;
+	text-transform: capitalize;
+}
+
+.hero p {
+	color: var(--dark-grey);
+	font-size: 20px;
+}
+.hero input {
+	border-radius: 8px;
+	background: var(--white);
+	padding: 21px 200px 21px 25px;
+	font-size: 20px;
+	color: var(--grey);
+}
+
+.hero button {
+	border-radius: 8px;
+	background: var(--blue);
+	padding: 20px 23px 19px 23px;
+	color: var(--white);
+	font-size: 20px;
+	font-weight: 700;
 }
 
 
