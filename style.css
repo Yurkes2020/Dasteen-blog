@@ -18,17 +18,23 @@
 	text-decoration: none;
 	outline: none;
 	border: none;
-	font-family: "Plus Jakarta Sans", sans-serif;
+	font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/*body {*/
-/*	position: relative;*/
-/*}*/
+body {
+	/*position: relative;*/
+	color: var(--black);
+	background-color: var(--white);
+}
 
 header, section, footer {
 	width: 1440px;
 	padding: 0 95px;
 	margin: 0 auto;
+}
+
+button {
+	cursor: pointer;
 }
 
 /*-----------------------header-----------------------------*/
@@ -62,17 +68,13 @@ nav ul {
 	gap: 50px;
 }
 
-
-nav ul li:nth-child(4) {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
 nav a {
 	color: var(--black);
 	font-size: 20px;
 	font-weight: 700;
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 
 nav button {
@@ -89,6 +91,10 @@ nav button {
 
 /*---------------------------main-----------------------------*/
 
+
+/*--------------------------hero---------------*/
+
+
 .hero {
 	background: var(--light-grey-1);
 	height: 814px;
@@ -98,23 +104,26 @@ nav button {
 	gap: 116px;
 }
 
-.hero div {
-
-}
-
 .hero img {
 	padding: 13px 18px 11px;
 }
+
 .hero h1 {
 	color: var(--black);
 	font-size: 64px;
 	text-transform: capitalize;
+	margin-bottom: 30px;
+	padding-right: 20px;
 }
 
 .hero p {
 	color: var(--dark-grey);
 	font-size: 20px;
+	border-left: 3px solid var(--black);
+	padding-left: 12px;
+	margin-bottom: 30px;
 }
+
 .hero input {
 	border-radius: 8px;
 	background: var(--white);
@@ -130,7 +139,160 @@ nav button {
 	color: var(--white);
 	font-size: 20px;
 	font-weight: 700;
+	margin-left: 20px;
 }
+
+/*--------------------------skills---------------*/
+
+.skills {
+	padding-top: 67px;
+	padding-bottom: 68px;
+	background-color: var(--light-grey-1);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: 24px;
+	text-transform: capitalize;
+}
+
+.link-container {
+	display: flex;
+	gap: 12px;
+	align-items: baseline;
+	color: var(--black);
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.skills ul {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.skills li {
+	width: 220px;
+	height: 280px;
+	padding-left: 30px;
+	border-radius: 8px;
+	background: var(--white);
+	box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.skills li:hover {
+	background: var(--blue);
+	color: var(--white);
+	transition: 0.5s;
+}
+
+.skills li div {
+	background-color: var(--white);
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 7px;
+}
+
+.skills ul p {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-top: 30px;
+}
+
+/*------------------------------article---------------*/
+
+.article {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+article  {
+	margin-bottom: 80px;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	margin-top: 30px;
+}
+
+.cards li {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.cards li:hover {
+	border-radius: 12px;
+	box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+	transition: 0.5s;
+}
+
+.cards img {
+	margin-bottom: 25px;
+}
+
+.title-text {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+
+.avatar {
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+.avatar h4 {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.avatar p {
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.button {
+	padding: 20px 23px 19px 23px;
+	border-radius: 8px;
+	background: var(--blue);
+	color:var(--white);
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+}
+
+
+
 
 
 
