@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header>
-		<p>Dasteen<span>.Blog</span>
+		<p class="text-logo">Dasteen<span class="span-logo">.Blog</span>
 		</p>
 		<nav>
 			<ul>
@@ -17,16 +17,17 @@
 					<a href="">Home</a>
 				</li>
 				<li>
-					<a href="">Category</a>
+					<a href="#category">Category</a>
 				</li>
 				<li>
 					<a href="">About Me</a>
 				</li>
 				<li>
-					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
-						<path d="M7.08329 13.2501C8.34057 13.2498 9.56161 12.8289 10.552 12.0544L13.6658 15.1682L14.6674 14.1667L11.5536 11.0528C12.3285 10.0623 12.7497 8.84102 12.75 7.58341C12.75 4.45896 10.2077 1.91675 7.08329 1.91675C3.95883 1.91675 1.41663 4.45896 1.41663 7.58341C1.41663 10.7079 3.95883 13.2501 7.08329 13.2501ZM7.08329 3.33341C9.42717 3.33341 11.3333 5.23954 11.3333 7.58341C11.3333 9.92729 9.42717 11.8334 7.08329 11.8334C4.73942 11.8334 2.83329 9.92729 2.83329 7.58341C2.83329 5.23954 4.73942 3.33341 7.08329 3.33341Z"
-								fill="#2B2C34"/>
-					</svg>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+							<path d="M7.08329 13.2501C8.34057 13.2498 9.56161 12.8289 10.552 12.0544L13.6658 15.1682L14.6674 14.1667L11.5536 11.0528C12.3285 10.0623 12.7497 8.84102 12.75 7.58341C12.75 4.45896 10.2077 1.91675 7.08329 1.91675C3.95883 1.91675 1.41663 4.45896 1.41663 7.58341C1.41663 10.7079 3.95883 13.2501 7.08329 13.2501ZM7.08329 3.33341C9.42717 3.33341 11.3333 5.23954 11.3333 7.58341C11.3333 9.92729 9.42717 11.8334 7.08329 11.8334C4.73942 11.8334 2.83329 9.92729 2.83329 7.58341C2.83329 5.23954 4.73942 3.33341 7.08329 3.33341Z"
+									fill="#2B2C34"/>
+						</svg>
 						Search
 					</a>
 				</li>
@@ -53,13 +54,13 @@
 				<p>On this blog I share tips and tricks,frameworks, projects, tutorials, etc Make sure you subscribe to get the latest updates
 				</p>
 				<form action="#">
-					<input placeholder="Enter your email here...." type="email">
-					<button type="submit">Subscribe</button>
+					<input class="email" placeholder="Enter your email here...." type="email">
+					<button class="submit" type="submit">Subscribe</button>
 				</form>
 			</div>
 			<img src="img/hero.png" alt="frontend developer">
 		</section>
-		<section class="skills">
+		<section id="category">
 			<div class="container">
 				<h2 class="title">Browse the category</h2>
 				<a class="link-container" href="#">see all category
@@ -71,34 +72,44 @@
 			</div>
 			<ul>
 				<li>
-					<div>
-						<img src="img/css.svg" alt="css">
-					</div>
-					<p>CSS</p>
+					<a href="#">
+						<div>
+							<img src="img/css.svg" alt="css">
+						</div>
+						<p>CSS</p>
+					</a>
 				</li>
 				<li>
-					<div>
-						<img src="img/js.svg" alt="js">
-					</div>
-					<p>javascript</p>
+					<a href="#">
+						<div>
+							<img src="img/js.svg" alt="js">
+						</div>
+						<p>javascript</p>
+					</a>
 				</li>
 				<li>
-					<div>
-						<img src="img/tailwindcss.svg" alt="tailwindcss">
-					</div>
-					<p>Tailwind</p>
+					<a href="#">
+						<div>
+							<img src="img/tailwindcss.svg" alt="tailwindcss">
+						</div>
+						<p>Tailwind</p>
+					</a>
 				</li>
 				<li>
-					<div>
-						<img src="img/vue.svg" alt="vue">
-					</div>
-					<p>Vue JS</p>
+					<a href="#">
+						<div>
+							<img src="img/vue.svg" alt="vue">
+						</div>
+						<p>Vue JS</p>
+					</a>
 				</li>
 				<li>
-					<div>
-						<img src="img/react.svg" alt="react">
-					</div>
-					<p>React JS</p>
+					<a href="#">
+						<div>
+							<img src="img/react.svg" alt="react">
+						</div>
+						<p>React JS</p>
+					</a>
 				</li>
 			</ul>
 		</section>
@@ -115,48 +126,56 @@
 				</div>
 				<ul class="cards">
 					<li>
-						<img src="img/bookjs.png" alt="bookjs">
-						<h3 class="title-text">Fundamental of javascript</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/bookjs.png" alt="bookjs">
+							<h3 class="title-text">Fundamental of javascript</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/gridcss.png" alt="gridcss">
-						<h3 class="title-text">Grid CSS make your life easier</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/gridcss.png" alt="gridcss">
+							<h3 class="title-text">Grid CSS make your life easier</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/mode.png" alt="mode">
-						<h3 class="title-text">Make animated light mode and dark mode toggle with CSS</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/mode.png" alt="mode">
+							<h3 class="title-text">Make animated light mode and dark mode toggle with CSS</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/game.png" alt="game">
-						<h3 class="title-text">Make tic tac toe games with react JS</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/game.png" alt="game">
+							<h3 class="title-text">Make tic tac toe games with react JS</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 				</ul>
 			</article>
@@ -172,48 +191,56 @@
 				</div>
 				<ul class="cards">
 					<li>
-						<img src="img/flexbox-css.png" alt="bookjs">
-						<h3 class="title-text">Flexbox cSS : Everything you need to know</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/flexbox-css.png" alt="bookjs">
+							<h3 class="title-text">Flexbox cSS : Everything you need to know</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/gridcss.png" alt="gridcss">
-						<h3 class="title-text">Grid CSS make your life easier</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/gridcss.png" alt="gridcss">
+							<h3 class="title-text">Grid CSS make your life easier</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/divcenter.png" alt="mode">
-						<h3 class="title-text">3 easy way to make div center</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/divcenter.png" alt="mode">
+							<h3 class="title-text">3 easy way to make div center</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/mode.png" alt="game">
-						<h3 class="title-text">Make animated light mode and dark mode toggle with CSS</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/mode.png" alt="game">
+							<h3 class="title-text">Make animated light mode and dark mode toggle with CSS</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 				</ul>
 			</article>
@@ -229,48 +256,56 @@
 				</div>
 				<ul class="cards">
 					<li>
-						<img src="img/array-js.png" alt="bookjs">
-						<h3 class="title-text">array in javasript - Learn JS #3</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/array-js.png" alt="bookjs">
+							<h3 class="title-text">array in javasript - Learn JS #3</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/bookjs.png" alt="gridcss">
-						<h3 class="title-text">Fundamental of javascript</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/bookjs.png" alt="gridcss">
+							<h3 class="title-text">Fundamental of javascript</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/project.png" alt="mode">
-						<h3 class="title-text">7 project with javascript you must try for your portfolio</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/project.png" alt="mode">
+							<h3 class="title-text">7 project with javascript you must try for your portfolio</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/calculator.png" alt="game">
-						<h3 class="title-text">make simple calculator with javascript</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/calculator.png" alt="game">
+							<h3 class="title-text">make simple calculator with javascript</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 				</ul>
 			</article>
@@ -286,54 +321,181 @@
 				</div>
 				<ul class="cards">
 					<li>
-						<img src="img/learn-react.png" alt="bookjs">
-						<h3 class="title-text">first month of leaning react jS</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/learn-react.png" alt="bookjs">
+							<h3 class="title-text">first month of leaning react jS</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/markdown.png" alt="gridcss">
-						<h3 class="title-text">build markdown editor with react JS</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/markdown.png" alt="gridcss">
+							<h3 class="title-text">build markdown editor with react JS</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/start-react.png" alt="mode">
-						<h3 class="title-text">getting started with react JS</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/start-react.png" alt="mode">
+							<h3 class="title-text">getting started with react JS</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<img src="img/game.png" alt="game">
-						<h3 class="title-text">mMake tic tac toe games with react JS</h3>
-						<div class="avatar">
-							<img src="img/avatar.svg" alt="avatar">
-							<div>
-								<h4>Dasteen</h4>
-								<p>Jan 10, 2022 ∙ 3 min read</p>
+						<a href="#">
+							<img src="img/game.png" alt="game">
+							<h3 class="title-text">Make tic tac toe games with react JS</h3>
+							<div class="avatar">
+								<img src="img/avatar.svg" alt="avatar">
+								<div>
+									<h4>Dasteen</h4>
+									<p>Jan 10, 2022 ∙ 3 min read</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 				</ul>
 			</article>
 			<a class="button" href="#">More Article</a>
 		</section>
+		<section class="subscribe">
+			<img src="img/email.png" alt="email">
+			<h2>Subscribe For the lastest updates</h2>
+			<p>Subscribe to newsletter and never miss the new post every week.</p>
+			<form action="#">
+				<input class="email" placeholder="Enter your email here...." type="email">
+				<button class="submit" type="submit">Subscribe</button>
+			</form>
+		</section>
 	</main>
-	<footer></footer>
+	<footer>
+		<div>
+			<div class="bio">
+				<p class="text-logo">Dasteen<span class="span-logo">.blog</span></p>
+				<p>Digitaldastin by Dastin Darmawan</p>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="img/monogram.png" alt="monogram">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
+								<path d="M23 1.03813C22.0424 1.71361 20.9821 2.23024 19.86 2.56813C19.2577 1.87564 18.4573 1.38482 17.567 1.16206C16.6767 0.939292 15.7395 0.995328 14.8821 1.32259C14.0247 1.64984 13.2884 2.23253 12.773 2.99185C12.2575 3.75116 11.9877 4.65047 12 5.56813V6.56813C10.2426 6.6137 8.50127 6.22394 6.93101 5.43358C5.36074 4.64321 4.01032 3.47677 3 2.03813C3 2.03813 -1 11.0381 8 15.0381C5.94053 16.4361 3.48716 17.1371 1 17.0381C10 22.0381 21 17.0381 21 5.53813C20.9991 5.25959 20.9723 4.98173 20.92 4.70813C21.9406 3.70163 22.6608 2.43084 23 1.03813V1.03813Z"
+										stroke="#2B2C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+					<li>
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#2B2C34" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
+										stroke="#2B2C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M17.5 6.5H17.51" stroke="#2B2C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8V8Z"
+										stroke="#2B2C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M6 9H2V21H6V9Z" stroke="#2B2C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="#2B2C34" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="navigation">
+				<ul>
+					<li>
+						<h3>Category</h3>
+					</li>
+					<li>
+						<a href="#">CSS</a>
+					</li>
+					<li>
+						<a href="#">Javascript</a>
+					</li>
+					<li>
+						<a href="#">Tailwind</a>
+					</li>
+					<li>
+						<a href="#">React JS</a>
+					</li>
+					<li>
+						<a href="#">More Category</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<h3>About Me</h3>
+					</li>
+					<li>
+						<a href="#">About Me</a>
+					</li>
+					<li>
+						<a href="#">Projects</a>
+					</li>
+					<li>
+						<a href="#">Achievement</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<h3>Get in touch</h3>
+					</li>
+					<li>
+						<a href="tel:+62-8XXX-XXX-XX">+62-8XXX-XXX-XX</a>
+					</li>
+					<li>
+						<a href="mailto:demo@gmail.com">demo@gmail.com</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<h3>Follow Us</h3>
+					</li>
+					<li>
+						<a href="#">Medium</a>
+					</li>
+					<li>
+						<a href="#">Instagram</a>
+					</li>
+					<li>
+						<a href="#">Twitter</a>
+					</li>
+					<li>
+						<a href="#">Facebook</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<p>© 2025 Digitaldastin</p>
+		</div>
+	</footer>
 </body>
 </html>
