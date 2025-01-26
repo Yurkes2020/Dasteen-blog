@@ -179,6 +179,10 @@ main {
 	color: var(--grey);
 }
 
+.email:focus {
+	box-shadow: 2px 2px 5px 5px #23bdbd;
+}
+
 input::placeholder {
 	color: var(--grey);
 	font-size: 20px;
@@ -192,6 +196,25 @@ input::placeholder {
 	font-size: 20px;
 	font-weight: 700;
 	margin-left: 20px;
+}
+
+.submit:hover {
+	animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+	0% {
+		background-color: #6246EA;
+		box-shadow: 0 0 5px #6246EA;
+	}
+	50% {
+		background-color: #173caf;
+		box-shadow: 0 0 20px #173caf;
+	}
+	100% {
+		background-color: #6246EA;
+		box-shadow: 0 0 5px #6246EA;
+	}
 }
 
 /*--------------------------category---------------*/
@@ -413,6 +436,7 @@ footer > ul li:first-child {
 	flex-direction: row;
 	gap: 30px;
 }
+
 .bio a {
 	display: block;
 	height: 100%;
